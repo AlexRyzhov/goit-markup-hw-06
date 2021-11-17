@@ -81,22 +81,31 @@
                   <label for="username">Имя</label>
                   <input type="text" name="username" id="username" />
                 </div>
-                <div class="modal-tell">
+                <div class="modal-name">
                   <label for="tel">Телефон</label>
                   <input type="tel" name="tell" id="tell" />
                 </div>
-                <div class="modal-mail">
+                <div class="modal-name">
                   <label for="email">Почта</label>
                   <input type="email" name="email" id="email" />
                 </div>
-                <div class="modal-comment">
-                  <label for="comment">Комментарий</label>
-                  <input
-                    type="text"
-                    name="comment"
-                    id="comment"
-                    placeholder="Добавить комментарий"
-                  />
+                <div class="modal-name">
+                  <label for="comments">Комментарий</label>
+                  <textarea
+                    name="comments"
+                    id="comments"
+                    rows="5"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="modal-checkbox">
+                  <input type="checkbox" name="select" id="select" />
+                  <label for="select"
+                    >Соглашаюсь с рассылкой и принимаю условия договора</label
+                  >
+                </div>
+                <div class="button-submit">
+                  <button type="submit">Отправить</button>
                 </div>
               </form>
             </div>
