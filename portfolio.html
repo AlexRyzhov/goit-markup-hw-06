@@ -306,23 +306,73 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="footer-heading container">
-        <a href="#" class="logo-footer"><span>Web</span>Studio</a>
-        <address class="address">
-          <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="footer-info list">
-            <li class="link">
-              <a href="mailto:info@example.com" class="footer-info-link"
-                >info@example.com</a
-              >
+      <div class="container footer-flex">
+        <div class="footer-heading">
+          <a href="#" class="logo-footer"><span>Web</span>Studio</a>
+          <address class="address">
+            <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-info list">
+              <li class="link">
+                <a href="mailto:info@example.com" class="footer-info-link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="link">
+                <a href="tel:+380991111111" class="footer-info-link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-join">
+          <p class="join">присоединяйтесь</p>
+          <ul class="footer-links list">
+            <li class="footer-li">
+              <a class="footer-link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#inst"></use>
+                </svg>
+              </a>
             </li>
-            <li class="link">
-              <a href="tel:+380991111111" class="footer-info-link"
-                >+38 099 111 11 11</a
-              >
+            <li class="footer-li">
+              <a class="footer-link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#in"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div class="subscribe-footer">
+          <p class="subscribe-text">подпишитесь на рассылку</p>
+          <div class="subscribe-link">
+            <form action="subscribe-heading" class="subscribe-heading">
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+              <label for="mail"></label>
+            </form>
+            <button class="footer-button" type="submit">
+              Подписаться
+              <svg width="24" height="24px">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

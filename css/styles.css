@@ -251,6 +251,8 @@ img {
     height: 581px;
     background-color: var(--pirmary-background-color);
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 }
 
@@ -267,7 +269,7 @@ img {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--pirmary-background-color);
-    transition: fill 2050ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .close-button :hover, .close-button :focus {
@@ -287,17 +289,49 @@ img {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+.modal-name svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+}
+
 
 .modal-name input {
     margin-top: 4px;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 4px;
+    outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.modal-name input:focus, .modal-name input:hover {
+.modal-name input:focus+svg {
+    fill: var(--accent);
+}
+
+.modal-name input:focus {
     border: 1px solid var(--accent);
 }
+
+
+.modal-name textarea {
+    margin-top: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-name textarea:focus {
+    border: 1px solid var(--accent);
+}
+
 
 .modal-name label {
     color: rgba(117, 117, 117, 1);
@@ -320,6 +354,15 @@ img {
     margin-top: 20px;
 }
 
+
+.modal-checkbox span {
+    display: inline-block;
+    line-height: 0.85;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
+
+
 .modal-checkbox input {
     margin-top: 4px;
     border-radius: 4px;
@@ -340,6 +383,7 @@ img {
     margin-top: 30px;
 }
 
+
 .button-submit button {
     outline: none;
     box-shadow: none;
@@ -358,11 +402,12 @@ img {
     border-radius: 4px;
     border: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-submit button:hover, .button-submit button:focus {
     background-color: #188CE8;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .modal-name textarea {
@@ -373,7 +418,7 @@ img {
 }
 
 .modal-heading {
-    margin-top: 40px;
+    margin-top: 2px;
     padding: 0 40px;
     align-items: center;
     justify-content: centnameer;
