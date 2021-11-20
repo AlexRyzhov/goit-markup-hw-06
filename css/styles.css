@@ -354,12 +354,19 @@ img {
     margin-top: 20px;
 }
 
+.modal-checkbox .label {
+    display: flex;
+    align-items: center;
 
-.modal-checkbox span {
+}
+
+
+.modal-checkbox span:last-child {
     display: inline-block;
-    line-height: 0.85;
-    color: var(--accent);
     border-bottom: 1px solid var(--accent);
+    line-height: 1;
+    color: var(--accent);
+
 }
 
 
@@ -417,11 +424,44 @@ img {
     resize: none;
 }
 
+/*чекбокс*/
+
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.checkbox-icon {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+}
+
+.checkbox:checked+.checkbox-icon {
+    display: flex;
+    border: 2px solid var(--accent);
+    background-color: var(--accent);
+    background-image: url(../images/svg-img/icon-check.svg);
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/*Модальное окно*/
+
 .modal-heading {
     margin-top: 2px;
     padding: 0 40px;
     align-items: center;
-    justify-content: centnameer;
+    justify-content: center;
     font-weight: 700;
     Font-size: 20px;
     Line-height: 1.15;
