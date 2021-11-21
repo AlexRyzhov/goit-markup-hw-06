@@ -256,26 +256,31 @@ img {
     border-radius: 4px;
 }
 
+/*Конпа закрытия модального окна*/
 .close-button {
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
+    display: flex;
     padding: 2px;
     right: 8px;
     top: 8px;
-    display: flex;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--pirmary-background-color);
+
+}
+
+.close-button svg {
+    padding-top: 3px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.close-button :hover, .close-button :focus {
+
+.close-button svg:hover, .close-button svg:focus {
     fill: var(--accent);
 }
 
+/*модальное окно*/
 .modal-window {
     display: block;
 }
@@ -366,6 +371,7 @@ img {
     border-bottom: 1px solid var(--accent);
     line-height: 1;
     color: var(--accent);
+    margin-left: 3px;
 
 }
 
@@ -873,15 +879,22 @@ img {
     fill: var(--pirmary-background-color);
 }
 
-.subscribe-heading input {
+.subscribe-heading {
+    display: flex;
+}
+
+
+
+.subcribe-input {
     width: 358px;
     padding: 15px 0 15px 16px;
     background-color: 1px solid var(--third-background-color);
     border-radius: 4px;
     border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
 
-.subscribe-heading input::placeholder {
+.subcribe-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
