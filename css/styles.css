@@ -316,6 +316,7 @@ img {
 
 .modal-name input:focus+svg {
     fill: var(--accent);
+    
 }
 
 .modal-name input:focus {
